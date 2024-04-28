@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-qwQb/aq4oU6EtEJ4Pt2pF4VqaWwDUtd3cYm8lbi+7Pv5Rm7Lz5Mjb5tFzjeuhhL94SJTbu8D67hiI0UKQ6bLDg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Social Media Analysis Dashboard</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* Changed background color */
+            color: #fff; /* Changed text color */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #34495e; /* Changed background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Changed box shadow */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff; /* Changed text color */
+        }
+
+        .viz-container {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .viz-title {
+            margin-top: 20px;
+            color: #ccc; /* Changed text color */
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #34495e; /* Changed background color */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-link {
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+            background-color: transparent;
+            border: 1px solid transparent;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Footer Styles */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            background-color: #34495e; /* Changed background color */
+            padding: 20px 0;
+            color: #fff; /* Changed text color */
+            border-radius: 8px;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background-color: #34495e; /* Changed background color */
+            color: #fff; /* Changed text color */
+        }
+
+        /* Contributors Section */
+        .contributors {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contributor {
+            width: 300px;
+            margin: 0 20px;
+            text-align: center;
+            background-color: #2c3e50; /* Changed background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Changed box shadow */
+        }
+
+        .contributor img {
+            border-radius: 8px; /* Changed border radius */
+            width: 250px; /* Changed width */
+            height: 400px; /* Changed height */
+            margin-bottom: 20px;
+        }
+
+        .contributor-info {
+            font-size: 18px;
+        }
+
+        .contributor-info a {
+            display: block;
+            margin-top: 10px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contributor-info a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="path_to_your_logo.png" alt="Logo" class="logo">
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#visuals" class="nav-link">Visuals</a>
+            <a href="#insights" class="nav-link">Insights</a>
+            <a href="#contributors" class="nav-link">Contributors</a>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Social Media Analysis Dashboard</h1>
+        <p>
+            This dashboard provides insights into social media usage patterns based on collected data from various
+            sources.
+            We utilized Google Sheets for data collection and management and employed MS SQL for backend database
+            management.
+            The website is developed using frontend technologies such as Bootstrap, HTML, and CSS. The backend is
+            powered
+            by Flask, a Python-based web framework, and MS SQL for database management. Visualization of data is
+            facilitated
+            using Matplotlib, Seaborn, and pandas libraries.
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Visuals</h2>
+        <div class="viz-container">
+            <!-- Visualization code here -->
+            <!-- Visualization 1 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Gender Distribution</h2>
+                <img src="{{ Viz1 }}" alt="Gender Distribution">
+            </div>
+    
+            <!-- Visualization 2 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Age Distribution</h2>
+                <img src="{{ Viz2 }}" alt="Age Distribution">
+            </div>
+    
+            <!-- Visualization 3 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Most Used Social Media Platforms</h2>
+                <img src="{{ Viz3 }}" alt="Most Used Social Media Platforms">
+            </div>
+    
+            <!-- Visualization 4 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Time of Day Usage Across Social Media Platforms</h2>
+                <img src="{{ Viz4 }}" alt="Time of Day Usage Across Social Media Platforms">
+            </div>
+    
+            <!-- Visualization 5 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Frequency of Social Media Usage per Day</h2>
+                <img src="{{ Viz5 }}" alt="Frequency of Social Media Usage per Day">
+            </div>
+    
+            <!-- Visualization 6 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Primary Use of Social Media by Gender</h2>
+                <img src="{{ Viz6 }}" alt="Primary Use of Social Media by Gender">
+            </div>
+    
+            <!-- Visualization 7 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Distribution of Importance of Social Media in Daily Life</h2>
+                <img src="{{ Viz7 }}" alt="Distribution of Importance of Social Media in Daily Life">
+            </div>
+    
+            <!-- Visualization 8 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Relationship between Age and Confidence in Controlling Social Media Usage</h2>
+                <img src="{{ Viz8 }}" alt="Relationship between Age and Confidence in Controlling Social Media Usage">
+            </div>
+    
+            <!-- Visualization 9 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Sleep Impact Due to Social Media by Gender</h2>
+                <img src="{{ Viz9 }}" alt="Sleep Impact Due to Social Media by Gender">
+            </div>
+    
+            <!-- Visualization 10 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Pairwise Relationships: Age, Time Spent on Social Media, and Sleep Impact</h2>
+                <img src="{{ Viz10 }}" alt="Pairwise Relationships: Age, Time Spent on Social Media, and Sleep Impact">
+            </div>
+    
+            <!-- Visualization 11 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Frequency of Content Posting by Most Used Platform</h2>
+                <img src="{{ Viz11 }}" alt="Frequency of Content Posting by Most Used Platform">
+            </div>
+    
+            <!-- Visualization 12 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Pressure to Present a Certain Image on Social Media by Age</h2>
+                <img src="{{ Viz12 }}" alt="Pressure to Present a Certain Image on Social Media by Age">
+            </div>
+    
+            <!-- Visualization 13 -->
+            <div class="viz-container">
+                <h2 class="viz-title">Frequency of Interacting with New People by Platform</h2>
+                <img src="{{ Viz13 }}" alt="Frequency of Interacting with New People by Platform">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Insights</h2>
+        <!-- Insights content goes here -->
+    </div>
+
+    <div class="container">
+        <h2>Contributors</h2>
+        <div class="contributors">
+            <!-- Contributor 1 -->
+            <div class="contributor">
+                <img src="static/Pramod.jpg" alt="Pramod Image">
+                <div class="contributor-info">
+                    <h3>Pramod Adhav</h3>
+                    <p>Backend Developer</p>
+                    <!-- Add social media links/icons here -->
+                    <!-- GitHub Button -->
+                    <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark">
+                        <i class="fab fa-github social-icon"></i>GitHub
+                    </a>
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-linkedin social-icon"></i>LinkedIn
+                    </a>
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/yourusername" target="_blank" class="btn btn-danger">
+                        <i class="fab fa-instagram social-icon"></i>Instagram
+                    </a>
+                </div>
+            </div>
+            <!-- Contributor 2 -->
+            <div class="contributor">
+                <img src="static/Keerthika.jpeg" alt="Keerthika Image">
+                <div class="contributor-info">
+                    <h3>Pujari Keerthika</h3>
+                    <p>Data Analyst</p>
+                    <!-- Add social media links/icons here -->
+                    <!-- GitHub Button -->
+                    <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark">
+                        <i class="fab fa-github social-icon"></i>GitHub
+                    </a>
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-linkedin social-icon"></i>LinkedIn
+                    </a>
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/yourusername" target="_blank" class="btn btn-danger">
+                        <i class="fab fa-instagram social-icon"></i>Instagram
+                    </a>
+                </div>
+            </div>
+            <!-- Contributor 3 -->
+            <div class="contributor">
+                <img src="static/Poonkuzhali.jpg" alt="Poo Image">
+                <div class="contributor-info">
+                    <h3>Poonkuzhali S</h3>
+                    <p>Frontend Developer</p>
+                    <!-- Add social media links/icons here -->
+                    <!-- GitHub Button -->
+                    <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark">
+                        <i class="fab fa-github social-icon"></i>GitHub
+                    </a>
+                    <!-- LinkedIn Button -->
+                    <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-linkedin social-icon"></i>LinkedIn
+                    </a>
+                    <!-- Instagram Button -->
+                    <a href="https://www.instagram.com/yourusername" target="_blank" class="btn btn-danger">
+                        <i class="fab fa-instagram social-icon"></i>Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+
+</html>

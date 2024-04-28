@@ -1,0 +1,121 @@
+ID,SM_ID,MOST_USED,AVG_TIME_SPENT,TIME_OF_DAY,FREQUENCY,POSTING_FREQUENCY
+1,SM1,WHATSAPP,30 mins - 1 hour,Morning (6:00 AM - 12:00 PM),1-3 times a day,Rarely or never
+2,SM2,TWITTER,30 mins - 1 hour,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Rarely or never
+3,SM3,YOUTUBE ,1-2 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+4,SM4,INSTAGRAM,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+5,SM5,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Multiple times a day
+6,SM6,WHATSAPP,3-4 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+7,SM7,WHATSAPP,3-4 hours,Late Night (12:00 AM - 6:00 AM),4-6 times a day,Few times a month
+8,SM8,WHATSAPP,2-3 hours,Afternoon (12:00 PM - 6:00 PM),7-10 times a day,Few times a month
+9,SM9,LINKEDIN,Less than 30 mins,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Few times a week
+10,SM10,INSTAGRAM,Less than 30 mins,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Rarely or never
+11,SM11,INSTAGRAM,2-3 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Few times a month
+12,SM12,WHATSAPP,1-2 hours,Morning (6:00 AM - 12:00 PM),4-6 times a day,Multiple times a day
+13,SM13,WHATSAPP,2-3 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Once a day
+14,SM14,WHATSAPP,1-2 hours,Late Night (12:00 AM - 6:00 AM),4-6 times a day,Rarely or never
+15,SM15,INSTAGRAM,4-5 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Few times a month
+16,SM16,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a month
+17,SM17,INSTAGRAM,3-4 hours,Afternoon (12:00 PM - 6:00 PM),7-10 times a day,Rarely or never
+18,SM18,WHATSAPP,3-4 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+19,SM19,WHATSAPP,Less than 30 mins,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+20,SM20,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+21,SM21,YOUTUBE ,1-2 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+22,SM22,INSTAGRAM,2-3 hours,Morning (6:00 AM - 12:00 PM),1-3 times a day,Multiple times a day
+23,SM23,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Once a day
+24,SM24,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+25,SM25,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Few times a week
+26,SM26,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+27,SM27,INSTAGRAM,1-2 hours,Afternoon (12:00 PM - 6:00 PM),7-10 times a day,Rarely or never
+28,SM28,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a month
+29,SM29,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+30,SM30,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week
+31,SM31,INSTAGRAM,1-2 hours,Morning (6:00 AM - 12:00 PM),4-6 times a day,Few times a month
+32,SM32,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a week
+33,SM33,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+34,SM34,WHATSAPP,2-3 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Few times a week
+35,SM35,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Multiple times a day
+36,SM36,INSTAGRAM,1-2 hours,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Once a day
+37,SM37,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+38,SM38,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+39,SM39,INSTAGRAM,4-5 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Few times a week
+40,SM40,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a month
+41,SM41,YOUTUBE,1-2 hours,Morning (6:00 AM - 12:00 PM),4-6 times a day,Rarely or never
+42,SM42,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+43,SM43,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a month
+44,SM44,WHATSAPP,3-4 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+45,SM45,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+46,SM46,INSTAGRAM,1-2 hours,Afternoon (12:00 PM - 6:00 PM),More than 10 times a day,Few times a month
+47,SM47,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+48,SM48,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week
+49,SM49,REDDIT,1-2 hours,Morning (6:00 AM - 12:00 PM),4-6 times a day,Rarely or never
+50,SM50,NONE,Less than 30 mins,Evening (6:00 PM - 12:00 AM),1-3 times a day,Few times a month
+51,SM51,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+52,SM52,WHATSAPP,4-5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week
+53,SM53,WHATSAPP,30 mins - 1 hour,Afternoon (12:00 PM - 6:00 PM),1-3 times a day,Few times a week
+54,SM54,NONE,1-2 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+55,SM55,INSTAGRAM,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+56,SM56,INSTAGRAM,3-4 hours,Morning (6:00 AM - 12:00 PM),More than 10 times a day,Once a day
+57,SM57,INSTAGRAM,More than 5 hours,Late Night (12:00 AM - 6:00 AM),7-10 times a day,Few times a week
+58,SM58,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Few times a week
+59,SM59,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+60,SM60,INSTAGRAM,2-3 hours,Late Night (12:00 AM - 6:00 AM),1-3 times a day,Rarely or never
+61,SM61,INSTAGRAM,More than 5 hours,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Few times a week
+62,SM62,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Few times a week
+63,SM63,INSTAGRAM,4-5 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+64,SM64,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week
+65,SM65,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+66,SM66,WHATSAPP,3-4 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Multiple times a day
+67,SM67,INSTAGRAM,More than 5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+68,SM68,INSTAGRAM,More than 5 hours,Morning (6:00 AM - 12:00 PM),7-10 times a day,Few times a month
+69,SM69,YOUTUBE ,1-2 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+70,SM70,INSTAGRAM,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+71,SM71,INSTAGRAM,1-2 hours,Afternoon (12:00 PM - 6:00 PM),7-10 times a day,Few times a week
+72,SM72,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+73,SM73,WHATSAPP,3-4 hours,Afternoon (12:00 PM - 6:00 PM),More than 10 times a day,Rarely or never
+74,SM74,WHATSAPP,2-3 hours,Late Night (12:00 AM - 6:00 AM),4-6 times a day,Rarely or never
+75,SM75,WHATSAPP,Less than 30 mins,Afternoon (12:00 PM - 6:00 PM),1-3 times a day,Rarely or never
+76,SM76,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+77,SM77,INSTAGRAM,4-5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Multiple times a day
+78,SM78,INSTAGRAM,More than 5 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Rarely or never
+79,SM79,WHATSAPP,3-4 hours,Afternoon (12:00 PM - 6:00 PM),More than 10 times a day,Few times a week
+80,SM80,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Few times a month
+81,SM81,INSTAGRAM,3-4 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Rarely or never
+82,SM82,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Few times a week
+83,SM83,WHATSAPP,1-2 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+84,SM84,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+85,SM85,INSTAGRAM,More than 5 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Few times a week
+86,SM86,WHATSAPP,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+87,SM87,INSTAGRAM,4-5 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+88,SM88,YOUTUBE,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+89,SM89,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+90,SM90,WHATSAPP,1-2 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+91,SM91,WHATSAPP,1-2 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+92,SM92,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+93,SM93,INSTAGRAM,4-5 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+94,SM94,WHATSAPP,1-2 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+95,SM95,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+96,SM96,INSTAGRAM,1-2 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week
+97,SM97,INSTAGRAM,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+98,SM98,LINKEDIN,2-3 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Few times a month
+99,SM99,WHATSAPP,30 mins - 1 hour,Morning (6:00 AM - 12:00 PM),1-3 times a day,Multiple times a day
+100,SM100,YOUTUBE,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+101,SM101,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Multiple times a day
+102,SM102,INSTAGRAM,3-4 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Rarely or never
+103,SM103,INSTAGRAM,2-3 hours,Evening (6:00 PM - 12:00 AM),7-10 times a day,Rarely or never
+104,SM104,INSTAGRAM,3-4 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a month
+105,SM105,WHATSAPP,3-4 hours,Afternoon (12:00 PM - 6:00 PM),More than 10 times a day,Few times a month
+106,SM106,INSTAGRAM,1-2 hours,Afternoon (12:00 PM - 6:00 PM),7-10 times a day,Rarely or never
+107,SM107,WHATSAPP,2-3 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+108,SM108,WHATSAPP,2-3 hours,Afternoon (12:00 PM - 6:00 PM),7-10 times a day,Rarely or never
+109,SM109,INSTAGRAM,2-3 hours,Late Night (12:00 AM - 6:00 AM),7-10 times a day,Few times a month
+110,SM110,WHATSAPP,2-3 hours,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Rarely or never
+111,SM111,WHATSAPP,1-2 hours,Afternoon (12:00 PM - 6:00 PM),4-6 times a day,Few times a month
+112,SM112,FACEBOOK,2-3 hours,Evening (6:00 PM - 12:00 AM),4-6 times a day,Rarely or never
+113,SM113,INSTAGRAM,3-4 hours,Late Night (12:00 AM - 6:00 AM),More than 10 times a day,Rarely or never
+114,SM114,WHATSAPP,30 mins - 1 hour,Afternoon (12:00 PM - 6:00 PM),More than 10 times a day,Few times a week
+115,SM115,WHATSAPP,3-4 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week
+116,SM116,WHATSAPP,1-2 hours,Evening (6:00 PM - 12:00 AM),1-3 times a day,Rarely or never
+117,SM117,WHATSAPP,1-2 hours,Morning (6:00 AM - 12:00 PM),4-6 times a day,Rarely or never
+118,SM118,WHATSAPP,2-3 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Rarely or never
+119,SM119,INSTAGRAM,30 mins - 1 hour,Evening (6:00 PM - 12:00 AM),4-6 times a day,Few times a month
+120,SM120,WHATSAPP,1-2 hours,Evening (6:00 PM - 12:00 AM),More than 10 times a day,Few times a week

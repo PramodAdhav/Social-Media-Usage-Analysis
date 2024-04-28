@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        InsightWave
+    </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom style for dark mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        /* Custom CSS for cover image */
+        .card-img-cover {
+            height: 60vh;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        /* Custom CSS for overlay content */
+        .card-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Fix navbar at the top */
+        body {
+            padding-top: 4.5rem;
+        }
+        /* Fix footer at the bottom */
+        footer {
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+        }
+        /* Custom CSS for output box */
+        .output-box {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+/* CSS for the contributor cards */
+        .contributors-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition for box-shadow and transform */
+        }
+
+        .contributors-card:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Apply a box shadow on hover */
+            transform: scale(1.05); /* Apply a scale transformation on hover */
+        }
+
+        /* CSS for the image inside the contributor cards */
+        .contributors-card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+        .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: #fff; /* Change the text color as needed */
+        border-radius: 5px; /* Adjust the border radius for curved edges */
+    }
+
+    .navbar-nav .nav-item .nav-link:before {
+        content: '';
+        position: absolute;
+        top: -2px; /* Adjust the positioning to align with the curved edges */
+        left: -2px; /* Adjust the positioning to align with the curved edges */
+        width: calc(100% + 4px); /* Adjust the width to cover the entire link including the border */
+        height: calc(100% + 4px); /* Adjust the height to cover the entire link including the border */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Adjust the border color and transparency */
+        border-radius: 5px; /* Match the border radius with the link's border radius */
+        z-index: -1;
+        opacity: 0; /* Initially invisible */
+        transition: opacity 0.3s ease; /* Add a smooth transition effect */
+        box-sizing: border-box; /* Include border width in element's total width and height */
+    }
+
+    .navbar-nav .nav-item .nav-link:hover:before {
+        opacity: 1; /* Show the border on hover */
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="/static/Logo.png" alt="Logo" width="120" height="80" class="d-inline-block align-text-top">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Visuals">Visuals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contributors">Contributors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Home">
+        <!-- Hero Section -->
+        <div class="container-fluid bg-dark text-white text-center py-5">
+            <h1>Welcome to InsightWave</h1>
+            <p class="lead">Unlocking Insights From Data Streams To Visualise Stories</p>
+        </div>
+    </section>
+    
+        <!-- Title card -->
+        <div class="container mt-5">
+            <div class="card position-relative">
+                <img src="/static/bg.png" class="card-img-cover" alt="Cover Image">
+                <div class="card-overlay">
+                    <!-- <h5 class="card-title">Title</h5> -->
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+
+    
+<br>
+<section id="Visuals">
+<div class="products"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h5 class="card-title">Gender Distribution</h5>
+                    <img src="{{ Viz1 }}" class="card-img-top" alt="Sed">
+                    <p class="card-text">A very simple conclusion that is drawn from the above pie chart is that the majority of them using social media are males.
+                        Can there be any factor that be drawn out from the statistical insights which makes males more prone towards social media usage?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="card m-2">
+                <div class="card-body">
+                    <h5 class="card-title">Age Distribution</h5>
+                    <img src="{{ Viz2 }}" alt="Scatter Plot">
+                    <p class="card-text">The inferences that can be drawn from this graph are that, majority of people using social media 
+                        are between the age group of 15-25. So, why is that this age group is more exposed to the social media, compared to the others, 
+                        what is it that attracts this age group particularly towards social media, 
+                        is there any common factor apart from the age, that puts them together in this inference? </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Name cards -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- First Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <h5 class="card-title">Most Used Social Media Platforms</h5>
+                <img src="{{ Viz3 }}" class="card-img-top" alt="Graph">
+                <div class="card-body">
+                    <p class="card-text">Number of respondents majorly use Instagram, and being Instagram users ourselves, it is natural that people scroll reels, or post content. 
+                        Scrolling reels is a source of entertainment, however if content makers, Instagram is a source of income. 
+                        Setting Instagram apart, it can be observed that WhatsApp, is the second most used app with more than 40 percent of them using WhatsApp. 
+                        So, can it be concluded that most of the social media users, use social media to connect with people or as a source of entertainment/income?</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <h5 class="card-title">Time of Day Usage Across Social Media Platforms</h5>
+                <img src="{{ Viz4 }}" class="card-img-top" alt="Graph">
+                <div class="card-body">
+                    <p class="card-text">It is a very simple graph that concludes that majority of them use social media either in the evenings or late nights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Graph cards second part -->
+<div class="container py-5">
+    <div class="row">
+        <!-- First Card (Left Side) -->
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="card-title">Pairwise Relationships: Age, Time Spent on Social Media, and Sleep Impact</h3>
+                    <img src="{{ Viz10 }}" alt="">
+                    <p class="card-text">Insights goes here</p>
+                    <!-- <p class="card-text">This is the first card on the left side, covering the second line too.</p> -->
+                </div>
+            </div>
+        </div>
+        <!-- Second Card (Top Right) -->
+        <div class="col-lg-8 mb-4">
+            <div class="d-flex flex-column h-100">
+                <div class="card flex-grow-1 mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Distribution of Importance of Social Media in Daily Life</h3>
+                        <img src="{{ Viz7 }}" alt="">
+                        <p class="card-text">Importance level of 5, for the social media is observed from more than 35 percent of respondents, 
+                            and there are hardly 4 percent of respondents for whom social media doesn’t play a huge role in their lives. 
+                            Considering the majority, social media is of great importance amongst the young generations. 
+                            However, what is it that people gain from social media? Why is it so important for them? 
+                            Is it potentially a catalyst for their growth and development? Or is it just a source of entertainment?</p>
+                    </div>
+                </div>
+                <!-- Third Card (Bottom Right) -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Relationship between Age and Confidence in Controlling Social Media Usage</h3>
+                        <img src="{{ Viz8 }}" alt="">
+                        <p class="card-text">From this graph it can be observed that a maximum number of people are quite confident in being able to control their social media usage, 
+                            and this confidence increases with growing age. 
+                            So, does age influence our control on usage of social media?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Name cards -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- First Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <h5 class="card-title">Sleep Impact Due to Social Media by Gender</h5>
+                <img src="{{ Viz9 }}" class="card-img-top" alt="Graph">
+                <div class="card-body">
+                    <p class="card-text">Males and females, both the gender, believe that usage of social media has impacted the sleep routine, 
+                        which implies that majority of them use social media at nights, most probably because everyone’s busy during the day time, 
+                        and at nights they use social media, so is it safe to say, social media might not just be a source of entertainment/income 
+                        but also acts as a distraction and can cause health issues as well?</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <h5 class="card-title">Frequency of Content Posting by Most Used Platform</h5>
+                <img src="{{ Viz11 }}" class="card-img-top" alt="Graph">
+                <div class="card-body">
+                    <p class="card-text">It can be inferred from this graph that majority of respondents do not post any content on social media, 
+                        and even if they do its mostly Instagram or WhatsApp. So, from this and as well graphs and their inferences is it safe to assume 
+                        that social media usage can be controlled to an extent if we could provide a way to control the usage of Instagram and WhatsApp?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Graph cards second part -->
+<div class="container py-5">
+    <div class="row">
+        <!-- First Card (Left Side) -->
+        <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h3 class="card-title">Pressure to Present a Certain Image on Social Media by Age</h3>
+                    <img src="{{ Viz12 }}" alt="">
+                    <p class="card-text">Quite a few interesting inferences can be drawn from this graph, people are equally not sure and 
+                        feel pressured to present a particular image on social media. So, in particularly no sure conclusion can be drawn with 
+                        naked graphs unless we perform some statistical tactics on these graphs.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Card (Top Right) -->
+        <div class="col-lg-8 mb-4">
+            <div class="d-flex flex-column h-100">
+                <div class="card flex-grow-1 mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Primary Use of Social Media by Gender</h3>
+                        <img src="{{ Viz6 }}" alt="">
+                        <p class="card-text">This graph provides us with a data driven conclusion that majority of people use social media platform 
+                            to stay connected with people or use social media to text. And as well use social media to discover content.</p>
+                    </div>
+                </div>
+                <!-- Third Card (Bottom Right) -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Frequency of Social Media Usage per Day</h3>
+                        <img src="{{ Viz5 }}" alt="">
+                        <p class="card-text">Considering this graph it can be observed that a majority of people use social media for more than ten times a day,
+                            at the same time we can observe that approximately 15 percent of the respondents use social media for just 1-3 times a day. 
+                            So, what sets apart these 15 percent of respondents is that scrolling through social media, isn’t typically a part of their daily routine. 
+                            However what matters to us is what is it that keeps them busy and not let them use social media, and can this be related to the age of the respondents? 
+                            Their job?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Center card -->
+<div class="container mt-5">
+    <div class="card">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img src="{{ Viz13 }}" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title">Frequency of Interacting with New People by Platform</h5>
+                    <p class="card-text">From this graph it is observed that people rarely encounter new interactions, its hardly a few times in a week. 
+                        So, what is it the keeps people engaged in a familiar content every single day? And why Instagram and WhatsApp again? And not any other social media app?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+
+
+<!-- Features Section -->
+<section id="Contributors">
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card contributors-card">
+                <img src="/static/Pramod.jpeg" class="card-img-top" alt="Pramod Image">
+                <div class="card-body">
+                    <h3 class="card-title">Pramod Adhav</h3>
+                    <p class="card-text"><i>Backend Developer</i></p>
+                    <!-- GitHub Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/PramodAdhav"  target = "_blank" class="btn btn-dark btn-block">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <br>
+                    <!-- LinkedIn Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/pramod-adhav-220403apkp/"  target = "_blank"  class="btn btn-primary btn-block">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                    <br>
+                    <!-- Instagram Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/justlikepramod/"  target = "_blank" class="btn btn-danger btn-block">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card contributors-card">
+                <img src="/static/Keerthika.jpg" class="card-img-top" alt="Keerthika Image">
+                <div class="card-body">
+                    <h3 class="card-title">Pujari Keerthika</h3>
+                    <p class="card-text"><i>Data Analyst</i></p>
+                    <!-- GitHub Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/keethu12345"  target = "_blank" class="btn btn-dark btn-block">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <br>
+                    <!-- LinkedIn Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/keerthika-pujari-404bb424b/"  target = "_blank"  class="btn btn-primary btn-block">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                    <br>
+                    <!-- Instagram Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/keethu2204/"  target = "_blank"  class="btn btn-danger btn-block">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+            <div class="card contributors-card">
+                <img src="/static/Poonkuzhali.jpg" class="card-img-top" alt="Poonkuzhali Image">
+                <div class="card-body">
+                    <h3 class="card-title">Poonkuzhali</h3>
+                    <p class="card-text"><i>Frontend Developer</i></p>
+                    <!-- GitHub Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/poonkuzhali108"  target = "_blank" class="btn btn-dark btn-block">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <br>
+                    <!-- LinkedIn Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.linkedin.com/in/poonkuzhalibda/"  target = "_blank"  class="btn btn-primary btn-block">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                    <br>
+                    <!-- Instagram Button -->
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/Siva_poonkuzhali" target = "_blank" class="btn btn-danger btn-block">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Contact Us</h2>
+          <p>Feel free to reach out to us with any questions or Enquiries.</p>
+          <br><br><br><br>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i>SRM Institute Of Science And Technology,<br>Bharathi Salai,<br>Ramapuram, Chennai,<br>Tamil Nadu 600089</li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:info@example.com">Pramodadhav111@gmail.com</a></li>
+            <li><i class="bi bi-envelope"></i> <a href="mailto:info@example.com">Keerthikapujari@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+          <form action="/" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <button onclick="scrollToTop()" class= "btn btn-dark">
+            Back to Top
+        </button>
+        <p>&copy; 2024 InsightWave. All Rights Reserved.</p>
+    </div>
+</footer>
+<script>
+    function scrollToTop(){
+        window.scrollTo({
+            top: 0,
+            behavior:"smooth"
+        });
+    }
+</script>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-bGjO8FMl/Tla1FkWJpZ7LEjCv5DIq3Wd8O+gJsLPSQ5z9xFV6UJag1J0RaPz4+Wh" crossorigin="anonymous">
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+E_ID,SM_ID,PRIMARY_USE,IMPORTANCE,STRESS,CONTROLLING ABILITY,ADDICTION_SCORE,SLEEP_AFFECT
+E1,SM1,Messaging or chatting with others,2,"No, never",9,"No, not at all",0
+E2,SM2,"Keeping up with news and current events, Discovering new content or entertainment",7,"No, not usually",8,"No, not at all",5
+E3,SM3,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues",7,"No, not usually",9,"Yes, to some extent",1
+E4,SM4,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues, Discovering new content or entertainment",7,"No, not usually",7,"Yes, definitely",6
+E5,SM5,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others",5,"Yes, occasionally",5,"Yes, definitely",10
+E6,SM6,"Staying connected with friends and family, Messaging or chatting with others",8,"No, never",6,"Yes, to some extent",10
+E7,SM7,Messaging or chatting with others,5,"No, not usually",8,"Yes, to some extent",7
+E8,SM8,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others",8,"No, not usually",10,"No, not at all",2
+E9,SM9,"Keeping up with news and current events, Networking with professionals or colleagues, Discovering new content or entertainment",6,"No, never",8,"No, not at all",3
+E10,SM10,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",7,"No, not usually",8,"No, not at all",2
+E11,SM11,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",6,"No, never",8,"No, not at all",2
+E12,SM12,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others",10,"Yes, occasionally",10,"No, not at all",0
+E13,SM13,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",4,"Yes, frequently",3,"Yes, to some extent",2
+E14,SM14,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others, Discovering new content or entertainment",5,"Yes, occasionally",5,"Yes, to some extent",5
+E15,SM15,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events",10,"Yes, occasionally",2,"Yes, definitely",5
+E16,SM16,"Staying connected with friends and family, Keeping up with news and current events, Messaging or chatting with others",10,"Yes, occasionally",5,"Yes, definitely",2
+E17,SM17,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Discovering new content or entertainment",6,"No, not usually",5,"Yes, to some extent",6
+E18,SM18,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",9,"No, not usually",5,"Yes, to some extent",8
+E19,SM19,"Staying connected with friends and family, Messaging or chatting with others",8,"No, never",9,"No, not at all",6
+E20,SM20,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",5,"No, not usually",10,"Yes, to some extent",1
+E21,SM21,"Staying connected with friends and family, Messaging or chatting with others",7,"No, not usually",4,"Yes, to some extent",7
+E22,SM22,Staying connected with friends and family,1,"Yes, frequently",8,"No, not at all",5
+E23,SM23,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",3,"No, not usually",6,"Yes, to some extent",4
+E24,SM24,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",10,"No, not usually",8,"Yes, to some extent",6
+E25,SM25,Keeping up with news and current events,9,"Yes, occasionally",5,"Yes, to some extent",8
+E26,SM26,Discovering new content or entertainment,1,"No, never",1,"No, not at all",0
+E27,SM27,"Staying connected with friends and family, Keeping up with news and current events",4,"No, never",10,"No, not at all",6
+E28,SM28,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others",8,"No, never",8,"Yes, to some extent",9
+E29,SM29,Discovering new content or entertainment,3,"No, not usually",10,"No, not at all",0
+E30,SM30,"Staying connected with friends and family, Networking with professionals or colleagues, Messaging or chatting with others",8,"Yes, occasionally",5,"Yes, to some extent",4
+E31,SM31,Discovering new content or entertainment,7,"Yes, occasionally",3,"Yes, to some extent",9
+E32,SM32,"Staying connected with friends and family, Keeping up with news and current events, Discovering new content or entertainment",7,"No, not usually",5,"Yes, to some extent",5
+E33,SM33,"Staying connected with friends and family, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",8,"No, not usually",8,"Yes, to some extent",9
+E34,SM34,Staying connected with friends and family,4,"No, not usually",8,"Yes, definitely",7
+E35,SM35,"Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",1,"No, not usually",10,"No, not at all",2
+E36,SM36,Staying connected with friends and family,9,"Yes, frequently",10,"Yes, definitely",10
+E37,SM37,Sharing photos or videos,9,"No, never",8,"Yes, to some extent",1
+E38,SM38,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events",9,"No, not usually",10,"No, not at all",0
+E39,SM39,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others",7,"No, not usually",3,"No, not at all",4
+E40,SM40,Staying connected with friends and family,10,"No, never",10,"No, not at all",0
+E41,SM41,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others",6,"No, not usually",9,"No, not at all",1
+E42,SM42,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events",4,"No, not usually",8,"Yes, to some extent",3
+E43,SM43,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",7,"No, not usually",8,"Yes, to some extent",7
+E44,SM44,"Keeping up with news and current events, Discovering new content or entertainment",7,"Yes, occasionally",3,"Yes, to some extent",5
+E45,SM45,Discovering new content or entertainment,5,"No, never",10,"No, not at all",3
+E46,SM46,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others, Discovering new content or entertainment",5,"No, not usually",9,"No, not at all",3
+E47,SM47,Networking with professionals or colleagues,10,"Yes, frequently",9,"Yes, definitely",9
+E48,SM48,Staying connected with friends and family,5,"Yes, occasionally",3,"Yes, to some extent",3
+E49,SM49,"Keeping up with news and current events, Discovering new content or entertainment",2,"No, never",10,"No, not at all",5
+E50,SM50,Staying connected with friends and family,1,"No, not usually",10,"No, not at all",0
+E51,SM51,Staying connected with friends and family,2,"No, not usually",5,"Yes, to some extent",4
+E52,SM52,"Staying connected with friends and family, Messaging or chatting with others",5,"No, not usually",5,"Yes, to some extent",5
+E53,SM53,"Staying connected with friends and family, Sharing photos or videos, Networking with professionals or colleagues, Messaging or chatting with others",5,"No, not usually",8,"No, not at all",1
+E54,SM54,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events",1,"No, never",1,"No, not at all",0
+E55,SM55,"Staying connected with friends and family, Messaging or chatting with others, Discovering new content or entertainment",2,"No, never",10,"No, not at all",1
+E56,SM56,Keeping up with news and current events,2,"Yes, frequently",5,"No, not at all",3
+E57,SM57,Networking with professionals or colleagues,6,"Yes, occasionally",3,"Yes, to some extent",2
+E58,SM58,Discovering new content or entertainment,6,"No, never",5,"No, not at all",1
+E59,SM59,"Staying connected with friends and family, Messaging or chatting with others",5,"Yes, occasionally",5,"Yes, definitely",8
+E60,SM60,Discovering new content or entertainment,2,"No, never",10,"No, not at all",0
+E61,SM61,Keeping up with news and current events,7,"Yes, occasionally",9,"Yes, definitely",7
+E62,SM62,Messaging or chatting with others,1,"Yes, occasionally",1,"Yes, definitely",2
+E63,SM63,"Staying connected with friends and family, Discovering new content or entertainment",1,"No, never",1,"Yes, to some extent",0
+E64,SM64,Staying connected with friends and family,8,"Yes, occasionally",5,"Yes, to some extent",6
+E65,SM65,"Keeping up with news and current events, Networking with professionals or colleagues, Discovering new content or entertainment",5,"No, not usually",9,"No, not at all",5
+E66,SM66,Networking with professionals or colleagues,5,"Yes, occasionally",8,"No, not at all",5
+E67,SM67,"Staying connected with friends and family, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",7,"Yes, occasionally",8,"Yes, definitely",6
+E68,SM68,Messaging or chatting with others,6,"Yes, occasionally",1,"Yes, to some extent",5
+E69,SM69,"Sharing photos or videos, Keeping up with news and current events, Discovering new content or entertainment",4,"No, not usually",10,"No, not at all",4
+E70,SM70,Discovering new content or entertainment,6,"Yes, occasionally",7,"Yes, to some extent",10
+E71,SM71,Staying connected with friends and family,2,"No, never",10,"Yes, to some extent",0
+E72,SM72,Keeping up with news and current events,4,"Yes, occasionally",8,"Yes, to some extent",5
+E73,SM73,Messaging or chatting with others,9,"Yes, frequently",2,"Yes, to some extent",9
+E74,SM74,Staying connected with friends and family,10,"Yes, occasionally",10,"Yes, definitely",10
+E75,SM75,Staying connected with friends and family,1,"Yes, occasionally",1,"No, not at all",0
+E76,SM76,Discovering new content or entertainment,1,"No, never",1,"No, not at all",1
+E77,SM77,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",10,"Yes, frequently",1,"Yes, definitely",5
+E78,SM78,"Staying connected with friends and family, Keeping up with news and current events",5,"No, not usually",7,"Yes, definitely",8
+E79,SM79,"Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",9,"Yes, occasionally",5,"Yes, to some extent",10
+E80,SM80,"Staying connected with friends and family, Keeping up with news and current events, Discovering new content or entertainment",4,"No, not usually",9,"No, not at all",8
+E81,SM81,Keeping up with news and current events,9,"Yes, occasionally",4,"Yes, to some extent",8
+E82,SM82,"Staying connected with friends and family, Sharing photos or videos, Discovering new content or entertainment",10,"No, never",10,"No, not at all",0
+E83,SM83,Messaging or chatting with others,5,"Yes, occasionally",5,"No, not at all",3
+E84,SM84,"Keeping up with news and current events, Networking with professionals or colleagues, Discovering new content or entertainment",8,"Yes, occasionally",8,"No, not at all",9
+E85,SM85,Messaging or chatting with others,10,"Yes, frequently",1,"Yes, definitely",5
+E86,SM86,"Staying connected with friends and family, Messaging or chatting with others",6,"No, not usually",9,"Yes, to some extent",4
+E87,SM87,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others",9,"No, not usually",10,"Yes, to some extent",5
+E88,SM88,"Staying connected with friends and family, Messaging or chatting with others",1,"No, not usually",1,"Yes, to some extent",0
+E89,SM89,Discovering new content or entertainment,1,"No, never",10,"No, not at all",3
+E90,SM90,"Staying connected with friends and family, Messaging or chatting with others",8,"No, not usually",10,"No, not at all",0
+E91,SM91,"Staying connected with friends and family, Messaging or chatting with others",3,"No, never",9,"No, not at all",0
+E92,SM92,"Keeping up with news and current events, Messaging or chatting with others",8,"Yes, occasionally",7,"Yes, to some extent",5
+E93,SM93,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",6,"No, not usually",4,"Yes, to some extent",3
+E94,SM94,"Staying connected with friends and family, Keeping up with news and current events, Messaging or chatting with others, Discovering new content or entertainment",8,"Yes, occasionally",9,"Yes, to some extent",1
+E95,SM95,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",5,"No, not usually",9,"Yes, to some extent",3
+E96,SM96,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",6,"Yes, occasionally",8,"Yes, to some extent",5
+E97,SM97,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues",6,"Yes, occasionally",8,"Yes, to some extent",3
+E98,SM98,"Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others",5,"No, never",10,"No, not at all",3
+E99,SM99,Staying connected with friends and family,1,"Yes, frequently",1,"Yes, definitely",0
+E100,SM100,"Staying connected with friends and family, Discovering new content or entertainment",1,"No, never",10,"No, not at all",5
+E101,SM101,"Sharing photos or videos, Keeping up with news and current events",8,"No, not usually",6,"Yes, definitely",5
+E102,SM102,Discovering new content or entertainment,8,"No, not usually",5,"Yes, definitely",6
+E103,SM103,"Networking with professionals or colleagues, Discovering new content or entertainment",6,"No, not usually",7,"Yes, to some extent",2
+E104,SM104,"Keeping up with news and current events, Discovering new content or entertainment",5,"Yes, occasionally",10,"Yes, definitely",3
+E105,SM105,Messaging or chatting with others,5,"Yes, occasionally",3,"Yes, to some extent",4
+E106,SM106,Discovering new content or entertainment,7,"No, not usually",4,"Yes, to some extent",7
+E107,SM107,Staying connected with friends and family,10,"Yes, occasionally",1,"Yes, to some extent",10
+E108,SM108,Staying connected with friends and family,2,"No, never",8,"No, not at all",3
+E109,SM109,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Discovering new content or entertainment",1,"No, not usually",8,"Yes, to some extent",1
+E110,SM110,Staying connected with friends and family,7,"Yes, occasionally",5,"Yes, to some extent",0
+E111,SM111,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Messaging or chatting with others",6,"No, never",9,"No, not at all",1
+E112,SM112,Discovering new content or entertainment,4,"No, not usually",5,"No, not at all",6
+E113,SM113,"Staying connected with friends and family, Sharing photos or videos, Messaging or chatting with others, Discovering new content or entertainment",8,"No, not usually",8,"Yes, to some extent",6
+E114,SM114,"Keeping up with news and current events, Discovering new content or entertainment",10,"Yes, frequently",4,"Yes, definitely",6
+E115,SM115,Messaging or chatting with others,10,"No, not usually",5,"Yes, to some extent",5
+E116,SM116,Staying connected with friends and family,5,"No, not usually",8,"Yes, to some extent",5
+E117,SM117,Staying connected with friends and family,5,"No, not usually",9,"Yes, to some extent",1
+E118,SM118,"Staying connected with friends and family, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others",6,"No, not usually",9,"Yes, to some extent",1
+E119,SM119,"Staying connected with friends and family, Sharing photos or videos, Keeping up with news and current events, Networking with professionals or colleagues, Messaging or chatting with others, Discovering new content or entertainment",8,"No, not usually",9,"No, not at all",7
+E120,SM120,"Staying connected with friends and family, Messaging or chatting with others, Discovering new content or entertainment",6,"Yes, occasionally",8,"Yes, to some extent",4
