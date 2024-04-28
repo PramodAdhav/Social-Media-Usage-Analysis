@@ -13,4 +13,6 @@ This project aims to analyze social media usage statistics based on survey data.
 # Installation
 
 1. Clone the repository:
-git clone https://github.com/your-username/social-media-usage-analysis.git
+```
+git clone https://github.com/PramodAdhav/Social-Media-Usage-Analysis.git
+```
