@@ -1,121 +1,121 @@
 ID,E_ID,NAME,EMAIL_ADDRESS,GENDER,AGE
-1,E1,Vishaal LS,###############,Male,19
-2,E2,Pramod Adhav,###############,Male,19
-3,E3,Swapnali Adhav,###############,Female,30
-4,E4,ganesh,###############,Male,19
+1,E1,VISHAAL LS,###############,Male,19
+2,E2,PRAMOD ADHAV,###############,Male,19
+3,E3,SWAPNALI ADHAV,###############,Female,30
+4,E4,GANESH,###############,Male,19
 5,E5,VIGNESHWAR R,###############,Male,19
-6,E6,Pujari Keerthika ,###############,Female,19
-7,E7,Vindhya Varshitha ,###############,Female,18
-8,E8,Tulika Tanvi Dasari,###############,Female,21
-9,E9,Ashok Kumar B ,###############,Male,20
-10,E10,Prakratee Singh ,###############,Female,19
-11,E11,Shreya Tumma ,###############,Female,20
-12,E12,Pavan ,###############,Male,40
-13,E13,Sravan Baratam ,###############,Male,19
-14,E14,Yassar Sharieg,###############,Male,19
-15,E15,Daksh,###############,Male,19
-16,E16,A.Guru Sai Vineeth,###############,Male,18
-17,E17,B.Nikhilsrinivas,###############,Male,19
-18,E18,Anish,###############,Male,19
-19,E19,T. Avinash ,###############,Male,19
-20,E20,Navaneeth M,###############,Male,19
-21,E21,Vijay Anand ,###############,Male,18
-22,E22,Matta Hemanth,###############,Male,18
-23,E23,Padmalakshmi S ,###############,Female,19
-24,E24,Mohit,###############,Male,18
-25,E25,M.Mahati,###############,Female,19
-26,E26,Sathish ,###############,Male,18
-27,E27,Shreesha,###############,Male,19
+6,E6,PUJARI KEERTHIKA ,###############,Female,19
+7,E7,VINDHYA VARSHITHA ,###############,Female,18
+8,E8,TULIKA TANVI DASARI,###############,Female,21
+9,E9,ASHOK KUMAR B ,###############,Male,20
+10,E10,PRAKRATEE SINGH ,###############,Female,19
+11,E11,SHREYA TUMMA ,###############,Female,20
+12,E12,PAVAN ,###############,Male,40
+13,E13,SRAVAN BARATAM ,###############,Male,19
+14,E14,YASSAR SHARIEF,###############,Male,19
+15,E15,DAKSH,###############,Male,19
+16,E16,A.GURU SAI VINEETH,###############,Male,18
+17,E17,B.NIKHILSRINIVAS,###############,Male,19
+18,E18,ANISH,###############,Male,19
+19,E19,T. AVINASH ,###############,Male,19
+20,E20,NAVANEETH M,###############,Male,19
+21,E21,VIJAY ANAND ,###############,Male,18
+22,E22,MATTA HEMANTH,###############,Male,18
+23,E23,PADMALAKSHMI S ,###############,Female,19
+24,E24,MOHIT,###############,Male,18
+25,E25,M.MAHATI,###############,Female,19
+26,E26,SATHISH ,###############,Male,18
+27,E27,SHREESHA,###############,Male,19
 28,E28,ARJUN R K ,###############,Male,19
-29,E29,K yoga prasanna varma ,###############,Male,19
-30,E30,Sharvesh,###############,Male,19
-31,E31,Harshini ,###############,Female,18
-32,E32,Lavanya R,###############,Female,19
-33,E33,Rohith,###############,Male,18
-34,E34,Jagadeesh ch,###############,Male,19
-35,E35,Gnanesh,###############,Male,19
-36,E36,M.V.Mahesh reddy,###############,Male,20
-37,E37,Chaitanya ,###############,Male,20
-38,E38,P.j.swaroop,###############,Male,20
-39,E39,Gowtham ,###############,Male,18
-40,E40,Patnala apparao ,###############,Male,21
-41,E41,Jasmissa Goldfoy,###############,Female,16
-42,E42,Silviya ,###############,Female,18
-43,E43,Athikesh,###############,Male,19
-44,E44,kapeesh prasad,###############,Male,20
-45,E45,Yashwanth SMD,###############,Male,18
-46,E46,Harshitha Nukala,###############,Female,18
-47,E47,Barath,###############,Male,18
-48,E48,Akilesh gokhul ,###############,Male,17
-49,E49,Souvik Ruhidas,###############,Male,18
-50,E50,E Gautham ,###############,Male,18
+29,E29,K YOGA PRASANNA VARMA ,###############,Male,19
+30,E30,SHARVESH,###############,Male,19
+31,E31,HARSHINI ,###############,Female,18
+32,E32,LAVANYA R,###############,Female,19
+33,E33,ROHITH,###############,Male,18
+34,E34,JAGADEESH CH,###############,Male,19
+35,E35,GNANESH,###############,Male,19
+36,E36,M.V.MAHESH REDDY,###############,Male,20
+37,E37,CHAITANYA ,###############,Male,20
+38,E38,P.J.SWAROOP,###############,Male,20
+39,E39,GOWTHAM ,###############,Male,18
+40,E40,PATNALA APPARAO ,###############,Male,21
+41,E41,JASMISSA GOLDFOY,###############,Female,16
+42,E42,SILVIYA ,###############,Female,18
+43,E43,ATHIKESH,###############,Male,19
+44,E44,KAPEESH PRASAD,###############,Male,20
+45,E45,YASHWANTH SMD,###############,Male,18
+46,E46,HARSHITHA NUKALA,###############,Female,18
+47,E47,BARATH,###############,Male,18
+48,E48,AKILESH GOKHUL ,###############,Male,17
+49,E49,SOUVIK RUHIDAS,###############,Male,18
+50,E50,E GAUTHAM ,###############,Male,18
 51,E51,POOJA SREE AK,###############,Female,18
-52,E52,K.vimaladharshini,###############,Female,18
-53,E53,Rahul ,###############,Male,18
-54,E54,Manish Kumar ,###############,Male,20
-55,E55,N M Vedhinee ,###############,Female,18
-56,E56,Mallika,###############,Female,19
+52,E52,K.VIMALADHARSHINI,###############,Female,18
+53,E53,RAHUL ,###############,Male,18
+54,E54,MANISH KUMAR ,###############,Male,20
+55,E55,N M VEDHINEE ,###############,Female,18
+56,E56,MALLIKA,###############,Female,19
 57,E57,NAVIN G ,###############,Male,19
 58,E58,JEEVITHDHAKSHIN K,###############,Male,18
-59,E59,Shashanka reddy ,###############,Female,20
-60,E60,P. Hemesh,###############,Male,18
-61,E61,s.sai abhinav,###############,Male,20
-62,E62,G Vikram abhiram ,###############,Male,19
+59,E59,SHASHANKA REDDY ,###############,Female,20
+60,E60,P. HEMESH,###############,Male,18
+61,E61,S.SAI ABHINAV,###############,Male,20
+62,E62,G VIKRAM ABHIRAM ,###############,Male,19
 63,E63,BALU,###############,Male,20
-64,E64,D.Niswitha ,###############,Female,19
-65,E65,Bhanu Prakash Cheruku,###############,Male,21
-66,E66,Pooji,###############,Female,30
-67,E67,aasreetha,###############,Female,19
+64,E64,D.NISWITHA ,###############,Female,19
+65,E65,BHANU PRAKASH CHERUKU,###############,Male,21
+66,E66,POOJI,###############,Female,30
+67,E67,AASREETHA,###############,Female,19
 68,E68,SADAM SNEHA ,###############,Female,18
-69,E69,Kaviya Senthil Kumar ,###############,Female,21
-70,E70,P.Sivanvitha,###############,Female,19
-71,E71,Niharika M ,###############,Female,19
-72,E72,Archana ,###############,Female,19
-73,E73,Poonkuzhali S,###############,Female,18
-74,E74,Varrshini ,###############,Female,23
-75,E75,Rajesh,###############,Male,24
-76,E76,V.Dishitha,###############,Female,19
-77,E77,Thullibilli Vamsi ,###############,Male,20
-78,E78,Vaishnavi ,###############,Female,19
-79,E79,M.sravya,###############,Female,19
-80,E80,Prem,###############,Male,20
-81,E81,Gowri Sankar reddy,###############,Male,21
-82,E82,Vignesh ,###############,Male,20
-83,E83,Golla Avinash ,###############,Male,20
-84,E84,K vamsi,###############,Male,20
-85,E85,Ayyappa ,###############,Male,20
-86,E86,deepti,###############,Female,20
+69,E69,KAVIYA SENTHIL KUMAR ,###############,Female,21
+70,E70,P.SIVANVITHA,###############,Female,19
+71,E71,NIHARIKA M ,###############,Female,19
+72,E72,ARCHANA ,###############,Female,19
+73,E73,POONKUZHALI S,###############,Female,18
+74,E74,VARRSHINI ,###############,Female,23
+75,E75,RAJESH,###############,Male,24
+76,E76,V.DISHITHA,###############,Female,19
+77,E77,THULLIBILLI VAMSI ,###############,Male,20
+78,E78,VAISHNAVI ,###############,Female,19
+79,E79,M.SRAVYA,###############,Female,19
+80,E80,PREM,###############,Male,20
+81,E81,GOWRI SANKAR REDDY,###############,Male,21
+82,E82,VIGNESH ,###############,Male,20
+83,E83,GOLLA AVINASH ,###############,Male,20
+84,E84,K VAMSI,###############,Male,20
+85,E85,AYYAPPA ,###############,Male,20
+86,E86,DEEPTI,###############,Female,20
 87,E87,VEDHAVARSHINI ,###############,Female,20
-88,E88,V .sharini pooja,###############,Female,19
-89,E89,V.Jananii,###############,Female,19
-90,E90,Mohammed Anees,###############,Male,20
-91,E91,Radhika ,###############,Female,20
-92,E92,Rithish,###############,Male,18
-93,E93,V.Tej manendra ,###############,Male,18
-94,E94,Harini.S,###############,Female,19
-95,E95,Reshmika S,###############,Female,19
-96,E96,Kavya P,###############,Female,19
-97,E97,Meshach Judah Matthew ,###############,Male,19
-98,E98,Anandha Karthikeyan,###############,Male,24
+88,E88,V .SHARINI POOJA,###############,Female,19
+89,E89,V.JANANII,###############,Female,19
+90,E90,MOHAMMED ANEES,###############,Male,20
+91,E91,RADHIKA ,###############,Female,20
+92,E92,RITHISH,###############,Male,18
+93,E93,V.TEJ MANENDRA ,###############,Male,18
+94,E94,HARINI.S,###############,Female,19
+95,E95,RESHMIKA S,###############,Female,19
+96,E96,KAVYA P,###############,Female,19
+97,E97,MESHACH JUDAH MATTHEW ,###############,Male,19
+98,E98,ANANDHA KARTHIKEYAN,###############,Male,24
 99,E99,POTNURU VENKATA SAI NITHIN ,###############,Male,20
-100,E100,Pujari Sreedevi,###############,Female,49
-101,E101,Hirthik Raj R,###############,Male,19
-102,E102,Suborna Goswami ,###############,Female,18
-103,E103,Dev Gulati ,###############,Male,19
-104,E104,Stuti,###############,Female,24
-105,E105,Sri Latha Chandra ,###############,Female,40
-106,E106,Sushmitha ,###############,Female,32
-107,E107,gsrilakshmi,###############,Female,39
-108,E108,Devika,###############,Female,38
-109,E109,Zaman Siddiqui ,###############,Male,20
-110,E110,Sree sudha ,###############,Female,46
-111,E111,Amareshwari ,###############,Female,47
-112,E112,Rama,###############,Female,33
-113,E113,Krish Prem Prakash ,###############,Male,19
-114,E114,Ujwala,###############,Female,38
-115,E115,P. Rajyalakshmi,###############,Female,55
-116,E116,K. Manjula,###############,Female,63
-117,E117,K.Rajagopal,###############,Male,66
+100,E100,PUJARI SREEDEVI,###############,Female,49
+101,E101,HIRTHIK RAJ R,###############,Male,19
+102,E102,SUBORNA GOSWAMI ,###############,Female,18
+103,E103,DEV GULATI ,###############,Male,19
+104,E104,STUTI,###############,Female,24
+105,E105,SRI LATHA CHANDRA ,###############,Female,40
+106,E106,SUSHMITHA ,###############,Female,32
+107,E107,GSRILAKSHMI,###############,Female,39
+108,E108,DEVIKA,###############,Female,38
+109,E109,ZAMAN SIDDIQUI ,###############,Male,20
+110,E110,SREE SUDHA ,###############,Female,46
+111,E111,AMARESHWARI ,###############,Female,47
+112,E112,RAMA,###############,Female,33
+113,E113,KRISH PREM PRAKASH ,###############,Male,19
+114,E114,UJWALA,###############,Female,38
+115,E115,P. RAJYALAKSHMI,###############,Female,55
+116,E116,K. MANJULA,###############,Female,63
+117,E117,K.RAJAGOPAL,###############,Male,66
 118,E118,AKILESH ,###############,Male,19
-119,E119,Ramji Venkateshwaran S,###############,Male,19
-120,E120,Balasubramaniam ,###############,Male,45
+119,E119,RAMJI VENKATESHWARAN S,###############,Male,19
+120,E120,BALASUBRAMANIAM ,###############,Male,45
