@@ -16,3 +16,10 @@ This project aims to analyze social media usage statistics based on survey data.
 ```
 git clone https://github.com/PramodAdhav/Social-Media-Usage-Analysis.git
 ```
+
+2. Open the Project in Visual Studio Code (or any preferred IDE)
+
+3. Installing necessary libraries:
+```
+pip install flask pyodbc pandas matplotlib seaborn
+```
