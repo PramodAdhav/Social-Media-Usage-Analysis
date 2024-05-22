@@ -4,10 +4,129 @@ import matplotlib.pyplot as plt
 from flask import Flask, render_template
 import seaborn as sns
 
+
 app = Flask(__name__)
+
+# Function to create the database "SM" if it doesn't exist
+def create_database():
+    cnxn_master = pyodbc.connect(r'Driver=SQL Server;Server=.\SQLEXPRESS;Database=master;Trusted_Connection=yes;')
+    cursor_master = cnxn_master.cursor()
+
+    # Check if the database exists
+    cursor_master.execute("SELECT COUNT(*) FROM sys.databases WHERE name = 'SM'")
+    if cursor_master.fetchone()[0] == 0:
+        cursor_master.execute("CREATE DATABASE SM;")
+
+    cnxn_master.commit()
+    cnxn_master.close()
+
+# Function to create tables in the database
+def create_tables():
+    cnxn = pyodbc.connect(r'Driver=SQL Server;Server=.\SQLEXPRESS;Database=SM;Trusted_Connection=yes;')
+    cursor = cnxn.cursor()
+
+    # Check if tables exist
+    cursor.execute("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME IN ('DETAILS', 'EMOTIONS', 'SOCIAL_MEDIA', 'STATS')")
+    tables_exist = cursor.fetchall()
+
+    # If tables exist, skip table creation
+    if tables_exist:
+        print("Tables already exist. Skipping table creation.")
+        cnxn.close()
+        return
+
+    # Create DETAILS table
+    cursor.execute('''
+        CREATE TABLE DETAILS (
+            ID BIGINT PRIMARY KEY,
+            E_ID NCHAR(10),
+            NAME NCHAR(100),
+            EMAIL_ADDRESS NCHAR(100),
+            GENDER NCHAR(10),
+            AGE TINYINT
+        )
+    ''')
+
+    # Create SOCIAL_MEDIA table
+    cursor.execute('''
+        CREATE TABLE SOCIAL_MEDIA (
+            ID BIGINT,
+            SM_ID NCHAR(10) PRIMARY KEY,
+            MOST_USED NCHAR(100),
+            AVG_TIME_SPENT NCHAR(10),
+            TIME_OF_DAY NCHAR(100),
+            FREQUENCY NCHAR(100),
+            POSTING_FREQUENCY NCHAR(100)
+        )
+    ''')
+
+    # Create EMOTIONS table
+    cursor.execute('''
+        CREATE TABLE EMOTIONS (
+            E_ID NCHAR(10) PRIMARY KEY,
+            SM_ID NCHAR(10),
+            PRESSURE_TO_PRESENT NVARCHAR(MAX),
+            NEW_INTERACTIONS NCHAR(100),
+            GROWTH_DEVELOPMENT SMALLINT,
+            TRENDS NVARCHAR(MAX)
+        )
+    ''')
+
+    # Create STATS table
+    cursor.execute('''
+        CREATE TABLE STATS (
+            E_ID NCHAR(10),
+            SM_ID NCHAR(10),
+            PRIMARY_USE NVARCHAR(MAX),
+            IMPORTANCE TINYINT,
+            STRESS NCHAR(100),
+            CONTROLLING_ABILITY TINYINT,
+            ADDICTION_SCORE NCHAR(100),
+            SLEEP_AFFECT TINYINT
+        )
+    ''')
+
+    cnxn.commit()
+    cnxn.close()
+
+# Function to insert data into the database
+def insert_data():
+    cnxn = pyodbc.connect(r'Driver=SQL Server;Server=.\SQLEXPRESS;Database=SM;Trusted_Connection=yes;')
+    cursor = cnxn.cursor()
+
+    # Check if tables exist
+    cursor.execute("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME IN ('DETAILS', 'EMOTIONS', 'SOCIAL_MEDIA', 'STATS')")
+    tables_exist = cursor.fetchall()
+
+    # If tables exist, skip data insertion
+    if tables_exist:
+        print("Tables already exist. Skipping data insertion.")
+        cnxn.close()
+        return
+
+    # Insert data into DETAILS table
+    details_data = pd.read_csv(r'C:\Users\Pramod Adhav\Documents\GitHub\Social-Media-Usage-Analysis\csv\DETAILS.csv')
+    details_data.to_sql('DETAILS', cnxn, if_exists='append', index=False)
+
+    # Insert data into EMOTIONS table
+    emotions_data = pd.read_csv(r'C:\Users\Pramod Adhav\Documents\GitHub\Social-Media-Usage-Analysis\csv\EMOTIONS.csv')
+    emotions_data.to_sql('EMOTIONS', cnxn, if_exists='append', index=False)
+
+    # Insert data into SOCIAL_MEDIA table
+    social_media_data = pd.read_csv(r'C:\Users\Pramod Adhav\Documents\GitHub\Social-Media-Usage-Analysis\csv\SOCIAL_MEDIA.csv')
+    social_media_data.to_sql('SOCIAL_MEDIA', cnxn, if_exists='append', index=False)
+
+    # Insert data into STATS table
+    stats_data = pd.read_csv(r'C:\Users\Pramod Adhav\Documents\GitHub\Social-Media-Usage-Analysis\csv\STATS.csv')
+    stats_data.to_sql('STATS', cnxn, if_exists='append', index=False)
+
+    cnxn.close()
 
 @app.route('/')
 def index():
+    # Insert data into the database
+    insert_data()
+
     cnxn = pyodbc.connect(r'Driver=SQL Server;Server=.\SQLEXPRESS;Database=SM;Trusted_Connection=yes;')
     cursor = cnxn.cursor()
 
