@@ -38,16 +38,16 @@ Go to ```Tasks``` and select ```Import Flat File```. Go to the CSV file's locati
 Make sure that the table name is same as the file name(without the .csv extension) 
 Refer the below images and change the datatypes accordingly:
 
-TABLE 1 - 'DETAILS' image
+TABLE 1 - 'DETAILS'
 ![DETAILS](https://github.com/PramodAdhav/Social-Media-Usage-Analysis/assets/125786411/d724f5ca-9d57-42fa-9b1f-a76e28098bd4)
 
 TABLE 2 - 'EMOTIONS' 
 ![EMOTIONS](https://github.com/PramodAdhav/Social-Media-Usage-Analysis/assets/125786411/f47fa54d-24ed-4e83-980f-41456699cd78)
 
-TABLE 3 - 'SOCIAL_MEDIA' image
+TABLE 3 - 'SOCIAL_MEDIA'
 ![SOCIAL_MEDIA](https://github.com/PramodAdhav/Social-Media-Usage-Analysis/assets/125786411/c958bc22-8c8f-46fd-8e39-e091b15313de)
 
-TABLE 4 - 'STATS' image
+TABLE 4 - 'STATS'
 ![STATS](https://github.com/PramodAdhav/Social-Media-Usage-Analysis/assets/125786411/20e98019-2615-4155-b4de-4c430e85375e)
 
 After adding all the tables into the database, open ```Visualization.py``` file and modify the Connection String to the system's local database server connection string.
