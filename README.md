@@ -23,10 +23,11 @@ Installing necessary libraries: Open the terminal and enter the following line
 If you wish to reproduce the project with the same database setup, follow these steps:
 Install MSSQL: Download and install Microsoft SQL Server(SQL EXPRESS Edition is used for this project) from the official website. Also install SSMS(SQL SERVER MANAGEMENT STUDIO) for managing database infrastructure. Make sure the Authentication is set to "Window Authentication" and Hit Connect.
 
-Click on 'New Query' and write a query to create a new database 'SM':
+* Click on 'New Query' and write a query to create a new database 'SM':
 
 ```CREATE DATABASE SM;```
-Put the database to use:
+
+* Put the database to use:
 ```USE SM;```
 
 Now, Add tables into the database SM. Go to databases in the Object Explorer and right-click on the database 'SM'. Go to ```Tasks``` and select ```Import Flat File```. Go to the CSV file's location and choose the files one by one. Make sure that the table name is same as the file name(without the .csv extension) Refer the below images and change the datatypes accordingly:
