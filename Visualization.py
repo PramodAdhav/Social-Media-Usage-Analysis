@@ -5,6 +5,7 @@ from flask import Flask, render_template
 import seaborn as sns
 
 
+
 app = Flask(__name__)
 
 # Function to create the database "SM" if it doesn't exist
@@ -164,7 +165,7 @@ def index():
     df3 = pd.read_sql_query(query3, cnxn)
 
     plt.figure(figsize=(5, 3))
-    plt.barh(df3['MOST_USED'], df3['platform_count'])
+    plt.barh(df3['MOST_USED'], df3['platform_count'],color = '#8856a7')
     plt.xlabel('Number of Respondents')
     plt.ylabel('Social Media Platform')
     plt.tight_layout()
@@ -254,8 +255,8 @@ def index():
     query7 = "SELECT IMPORTANCE FROM STATS"
     df7 = pd.read_sql_query(query7, cnxn)
 
-    plt.figure(figsize=(7, 3))
-    df7['IMPORTANCE'].value_counts().sort_index().plot(marker='o')
+    plt.figure(figsize=(12, 4))
+    df7['IMPORTANCE'].value_counts().sort_index().plot(marker='o', color = 'violet')
     plt.xlabel('Importance Level')
     plt.ylabel('Number of Respondents')
     plt.grid(True)
@@ -274,8 +275,8 @@ def index():
                 """
     df8 = pd.read_sql_query(query8, cnxn)
 
-    plt.figure(figsize=(7, 3))
-    plt.scatter(df8['AGE'], df8['CONTROLLING_ABILITY'], alpha=0.5)
+    plt.figure(figsize=(12, 4))
+    plt.scatter(df8['AGE'], df8['CONTROLLING_ABILITY'], alpha=0.5, color = 'green')
     plt.xlabel('Age')
     plt.ylabel('Confidence in Controlling Usage')
     plt.grid(True)
@@ -295,7 +296,7 @@ def index():
     df9 = pd.read_sql_query(query9, cnxn)
 
     plt.figure(figsize=(5, 3))
-    sns.boxplot(x='GENDER', y='SLEEP_AFFECT', data=df9)
+    sns.boxplot(x='GENDER', y='SLEEP_AFFECT', data=df9, palette='pastel')
     plt.xlabel('Gender')
     plt.ylabel('Sleep Impact')
     plt.grid(True)
@@ -319,7 +320,7 @@ def index():
     df10 = pd.read_sql_query(query10, cnxn)
 
     sns.set_theme(style="ticks")
-    sns.pairplot(df10)
+    sns.pairplot(df10, palette='husl')
     plt.title('Pairwise Relationships')
     plt.tight_layout()
     Viz10 = 'static/Age_Time_Sleep.png'
@@ -334,9 +335,8 @@ def index():
                 FROM SOCIAL_MEDIA SM ORDER BY ID
                 """
     df11 = pd.read_sql_query(query11, cnxn)
-
     plt.figure(figsize=(8, 5))
-    sns.barplot(x='MOST_USED', y='POSTING_FREQUENCY', data=df11, errorbar=None)
+    sns.barplot(x='MOST_USED', y='POSTING_FREQUENCY', data=df11, ci=None)
     plt.xlabel('Social Media Platform')
     plt.ylabel('Frequency of Content Posting')
     plt.xticks(rotation=45)  # Rotate x-axis labels by 45 degrees for better readability
@@ -358,9 +358,9 @@ def index():
     custom_labels = ['Not Sure', 'Comfortable\n being genuine', 'Sometimes/\nDepends', 'Feel pressured\nto present']
 
     plt.figure(figsize=(4, 6))  # Increase the figure size
-    sns.barplot(x='PRESSURE_TO_PRESENT', y='AGE', data=df12, errorbar=None)
-    plt.xlabel('Pressure to Present Image (Scale)')
-    plt.ylabel('Age Group')
+    sns.barplot(x='PRESSURE_TO_PRESENT', y='AGE', data=df12, errorbar=None, palette = 'magma')
+    plt.xlabel('Pressure to Present Image')
+    plt.ylabel('No of Respondants')
     plt.xticks(ticks=range(len(custom_labels)), labels=custom_labels, rotation=45)  # Set custom x-axis labels
     plt.tight_layout()
     Viz12 = 'static/pressure_present.png'
