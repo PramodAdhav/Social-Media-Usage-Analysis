@@ -1,6 +1,12 @@
 # Overview
 This project aims to analyze social media usage statistics based on survey data. The project collects responses from participants regarding their social media usage habits and preferences. The collected data is then processed and visualized in the form of graphs to provide insights into social media usage trends.
 
+We conducted a Google Forms survey and collected the data into Google Sheets. You can access the dataset through the provided link. Below is a properly organized representation of the data:
+```https://docs.google.com/spreadsheets/d/1jMtDwZsu590qSv0Z93IBb_whHhbvA7lbEJL7aCMElqk/edit?usp=sharing```
+
+* Each column header in Google Sheets corresponds to a question from the Google Forms survey.
+* Responses are recorded in rows beneath their respective question columns.
+
 # Technologies Used
 * Frontend: HTML, CSS & Bootstrap.
 * Backend: Flask.
@@ -54,3 +60,4 @@ After adding all the tables into the database, open ```Visualization.py``` file 
 
 # Execution
 Run the ```Visualization.py``` file and ctrl+click on ```http://127.0.0.1:5000``` to start the Flask application.
+Make sure to set right the location path of all the image accurately in the code.
