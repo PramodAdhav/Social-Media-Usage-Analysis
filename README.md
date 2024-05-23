@@ -60,4 +60,4 @@ After adding all the tables into the database, open ```Visualization.py``` file 
 
 # Execution
 Run the ```Visualization.py``` file and ctrl+click on ```http://127.0.0.1:5000``` to start the Flask application.
-Make sure to set right the location path of all the image accurately in the code.
+Make sure to set the location path of all the images accurately in ```visualization.py``` and ```index.html``` files.
