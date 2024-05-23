@@ -14,7 +14,7 @@ def index():
     cnxn = pyodbc.connect(r'Driver=SQL Server;Server=.\SQLEXPRESS;Database=SM;Trusted_Connection=yes;')
     cursor = cnxn.cursor()
 
-    #############  QUERY-1 ###############
+#############  QUERY-1 ###############
     ##### Visualize the distribution of gender among respondents using a pie chart. ###
     query1 = "SELECT GENDER, COUNT(*) AS gender_count FROM DETAILS GROUP BY GENDER"
     df1 = pd.read_sql_query(query1, cnxn)
@@ -148,9 +148,9 @@ def index():
     plt.savefig(Viz7)
     plt.close()
 
-    #############  QUERY-8 ###############
-        ### Explore the relationship between age and confidence in 
-        ### controlling social media usage using a scatter plot.
+#############  QUERY-8 ###############
+    ### Explore the relationship between age and confidence in 
+    ### controlling social media usage using a scatter plot.
     query8 = """
                 SELECT AGE, CONTROLLING_ABILITY
                 FROM DETAILS
@@ -189,86 +189,46 @@ def index():
     plt.close()
 
 
-
 #############  QUERY-10 ###############
-    ### Use a pair plot to visualize pairwise relationships between 
-    ### different variables, such as age, time spent on social media, and sleep impact.
-    query10 = """
-                SELECT Age, Avg_time_spent, Sleep_Affect
-                FROM SOCIAL_MEDIA
-                INNER JOIN STATS ON SOCIAL_MEDIA.SM_ID = STATS.SM_ID
-                INNER JOIN DETAILS ON DETAILS.ID = SOCIAL_MEDIA.ID
-                INNER JOIN EMOTIONS ON SOCIAL_MEDIA.SM_ID = EMOTIONS.SM_ID
-                """
-    df10 = pd.read_sql_query(query10, cnxn)
-
-    sns.set_theme(style="ticks")
-    sns.pairplot(df10, palette='husl')
-    plt.title('Pairwise Relationships')
-    plt.tight_layout()
-    Viz10 = 'static/Age_Time_Sleep.png'
-    plt.savefig(Viz10)
-    plt.close()
-
-#############  QUERY-11 ###############
-    ### Compare the frequency of content posting 
-    ### across different social media platforms using a clustered bar plot.
-    query11 = """
-                SELECT SM.MOST_USED, SM.POSTING_FREQUENCY
-                FROM SOCIAL_MEDIA SM ORDER BY ID
-                """
-    df11 = pd.read_sql_query(query11, cnxn)
-    plt.figure(figsize=(8, 5))
-    sns.barplot(x='MOST_USED', y='POSTING_FREQUENCY', data=df11, ci=None)
-    plt.xlabel('Social Media Platform')
-    plt.ylabel('Frequency of Content Posting')
-    plt.xticks(rotation=45)  # Rotate x-axis labels by 45 degrees for better readability
-    plt.tight_layout()
-    Viz11 = 'static/Post_Frequency.png'
-    plt.savefig(Viz11)
-    plt.close()
-
-
-#############  QUERY-12 ###############
     ### Create a grouped bar plot to compare the pressure to present 
     ### a certain image on social media between different age groups.
-    query12 = """
+    query10 = """
                 SELECT AGE, PRESSURE_TO_PRESENT
                 FROM DETAILS
                 INNER JOIN EMOTIONS ON DETAILS.E_ID = EMOTIONS.E_ID ORDER BY ID
                 """
-    df12 = pd.read_sql_query(query12, cnxn)
+    df10 = pd.read_sql_query(query10, cnxn)
     custom_labels = ['Not Sure', 'Comfortable\n being genuine', 'Sometimes/\nDepends', 'Feel pressured\nto present']
 
-    plt.figure(figsize=(4, 6))  # Increase the figure size
-    sns.barplot(x='PRESSURE_TO_PRESENT', y='AGE', data=df12, errorbar=None, palette = 'magma')
+    plt.figure(figsize=(4, 6))  
+    sns.barplot(x='PRESSURE_TO_PRESENT', y='AGE', data=df10, errorbar=None, palette = 'magma')
     plt.xlabel('Pressure to Present Image')
     plt.ylabel('No of Respondants')
-    plt.xticks(ticks=range(len(custom_labels)), labels=custom_labels, rotation=45)  # Set custom x-axis labels
+    plt.xticks(ticks=range(len(custom_labels)), labels=custom_labels, rotation=45)  
     plt.tight_layout()
-    Viz12 = 'static/pressure_present.png'
-    plt.savefig(Viz12)
+    Viz10 = 'static/pressure_present.png'
+    plt.savefig(Viz10)
     plt.close()
 
-#############  QUERY-13 ###############
+#############  QUERY-11 ###############
     ### Visualize the frequency of interacting with new people 
     ### on social media by platform using a stacked bar plot.
-    query13 = """
+    query11 = """
                 SELECT SM.MOST_USED, E.NEW_INTERACTIONS
                 FROM SOCIAL_MEDIA SM
                 INNER JOIN STATS S ON SM.SM_ID = S.SM_ID
                 INNER JOIN EMOTIONS E ON S.E_ID = E.E_ID ORDER BY ID
                 """
-    df13 = pd.read_sql_query(query13, cnxn)
+    df11 = pd.read_sql_query(query11, cnxn)
     cnxn.close()
-    df_pivot = df13.pivot_table(index='MOST_USED', columns='NEW_INTERACTIONS', aggfunc='size', fill_value=0)
+    df_pivot = df11.pivot_table(index='MOST_USED', columns='NEW_INTERACTIONS', aggfunc='size', fill_value=0)
     plt.figure(figsize=(5, 3))
     df_pivot.plot(kind='bar', stacked=True)
     plt.xlabel('Social Media Platform')
     plt.ylabel('Frequency of Interaction')
     plt.tight_layout()
-    Viz13 = 'static/New_Interactions.png'
-    plt.savefig(Viz13)
+    Viz11 = 'static/New_Interactions.png'
+    plt.savefig(Viz11)
     plt.close()
     return render_template('index.html', Viz1 = 'static/Gender_Distribution.png', 
                            Viz2 = 'static/Age_Distribution.png',
@@ -279,10 +239,8 @@ def index():
                            Viz7 = 'static/Importance.png',
                            Viz8 = 'static/Age_Confidence.png',
                            Viz9 = 'static/Sleep_Gender.png',
-                           Viz10 = 'static/Age_Time_Sleep.png',
-                           Viz11 = 'static/Post_Frequency.png',
-                           Viz12 = 'static/pressure_present.png',
-                           Viz13 = 'static/New_Interactions.png',
+                           Viz10 = 'static/pressure_present.png',
+                           Viz11 = 'static/New_Interactions.png',
                            )
 
 if __name__ == '__main__':
